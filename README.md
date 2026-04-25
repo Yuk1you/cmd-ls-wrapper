@@ -2,8 +2,6 @@
 
 一个极轻量的 Windows CMD `ls` 包装脚本，用 `dir` 模拟常见的 `ls` 用法。
 
-适合刚开始使用 CMD、习惯 Linux/macOS `ls` 命令，或者想在 Windows Terminal / CMD 中快速查看文件的人。
-
 > PowerShell 默认已经自带 `ls` 别名，等价于 `Get-ChildItem`，所以本仓库只保留 CMD 版本。
 
 ## 功能
@@ -15,7 +13,7 @@
 - `ls -la` / `ls -al`：显示隐藏/系统文件的详细列表
 - `ls --help`：查看帮助
 
-> 注意：这不是 GNU coreutils 的 `ls`，只是一个轻量 CMD 包装器，底层调用 Windows 自带的 `dir`。
+> 注意：这只是一个轻量 CMD 包装器，底层调用 Windows 自带的 `dir`。
 
 ## 文件
 
@@ -93,10 +91,6 @@ ls -la
 ```cmd
 ls --help
 ```
-
-## 为什么不直接用 PowerShell？
-
-PowerShell 本身有 `ls` 别名，但普通 CMD 没有。这个脚本就是为了让 CMD 也能输入 `ls`。
 
 ## 卸载
 
